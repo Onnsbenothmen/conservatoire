@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gestion des Produits</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <a class="navbar-brand" href="#">Conservatoire</a>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/instruments">acceuil</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" routerLink="/ListInstruments" id="navbardrop" data-toggle="dropdown">
+          instrumetns
+        </a></li>
+        <li>
+        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+         Authors
+        </a></li>
+      <li>
+        <a class="nav-link" routerLink="/login" id="navbardrop" data-toggle="dropdown">
+         login
+         </a></li>
+         <li>
+         <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
+          Contact
+          </a>
+         </li>
+
+
+        
+    
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+          <img src="assets/image.webp" alt="image" width="30"/>
+        </a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+          <img src="assets/3621464.png" alt="image" width="30"/>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+          <img src="assets/4701482.png" alt="image" width="30"/>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
+<router-outlet></router-outlet>

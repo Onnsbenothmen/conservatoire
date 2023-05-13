@@ -1,0 +1,23 @@
+<div class="mt-2">
+    <button type="submit" routerLink="/ajoutInstrument" class="btn btn-success" >Ajouter</button>
+    </div>
+<div class="container">
+    <div class="card shadow mb-4">
+    <div class="card-body">
+    <table class="table table-striped">
+    <tr> <th>nom</th><th>prix</th> <th>image</th> <th>heure</th><th>prof</th> </tr>
+    <tbody *ngFor="let instrument of instr">
+    <tr >
+    <td>{{instrument.nomi}}</td>
+    <td>{{instrument.prixi}}</td>
+    <td>{{instrument.image}}</td>
+    <td>{{instrument.heure}}</td>
+    <td>{{instrument.prof}}</td>
+    <td><a class="btn btn-danger" (click)="supprimerInstr(instrument)">Supprimer</a></td>
+    <td><a class="btn btn-success" [routerLink]="['/updateintr',instrument.nomi]">Modifier</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
